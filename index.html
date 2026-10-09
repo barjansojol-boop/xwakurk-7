@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173d70"><title>Xwakurk Basic School</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><img src="assets/school-logo.jpg" alt="School logo"><span><b>Xwakurk</b><small>Basic School</small></span></a>
+<div class="langs"><button data-lang="en">English</button><button data-lang="ku">کوردی</button><button data-lang="ar">العربية</button></div></header>
+<main>
+<section class="hero"><div class="copy"><span class="eyebrow" data-t="eyebrow">WELCOME TO OUR SCHOOL</span><h1 data-t="title">Big dreams begin<br><em>with learning.</em></h1><p data-t="intro">A welcoming place where curiosity grows, friendships begin, and every student can discover their potential.</p><a class="cta" href="#signup" data-t="start">Get started ↓</a></div><div class="hero-logo"><div class="circle"></div><img src="assets/school-logo.jpg" alt="Xwakurk Basic School emblem"><div class="float">✦ Learning together</div></div></section>
+<section class="about"><span class="eyebrow" data-t="aboutEyebrow">OUR SCHOOL, OUR FUTURE</span><h2 data-t="aboutTitle">A strong start. A brighter future.</h2><p data-t="aboutText">We believe every learner deserves encouragement, a safe place to learn, and the chance to reach for something wonderful.</p><div class="tiles"><article><b>01</b><h3 data-t="tile1">Every learner matters</h3><p data-t="tile1p">We celebrate each student's strengths and progress.</p></article><article><b>02</b><h3 data-t="tile2">Curiosity comes first</h3><p data-t="tile2p">Questions and discovery help young minds grow.</p></article><article><b>03</b><h3 data-t="tile3">We grow together</h3><p data-t="tile3p">Students and teachers make our community stronger.</p></article></div></section>
+<section class="account" id="signup"><div class="account-head"><span class="eyebrow" data-t="accountEyebrow">SCHOOL ACCESS</span><h2 data-t="accountTitle">Create your account</h2><p data-t="accountIntro">Sign up with a name and password. No email required.</p></div>
+<div class="panel"><div class="switcher"><button id="studentBtn" class="selected" data-t="student">Student sign-up</button><button id="teacherBtn" data-t="teacher">Teacher sign-up</button></div>
+<form id="signupForm"><label for="name" data-t="nameLabel">Your name</label><input id="name" maxlength="60" required autocomplete="name" placeholder="Enter your name"><label for="password" data-t="passwordLabel">Create a password</label><input id="password" type="password" minlength="8" maxlength="128" required autocomplete="new-password" placeholder="At least 8 characters"><label for="confirm" data-t="confirmLabel">Confirm password</label><input id="confirm" type="password" minlength="8" maxlength="128" required autocomplete="new-password" placeholder="Type it again"><div id="teacherPasswordWrap" class="hidden"><label for="teacherCode" data-t="teacherCodeLabel">Teacher access password</label><input id="teacherCode" type="password" autocomplete="off" placeholder="Teacher-only password"><p class="hint" data-t="teacherHint">Only approved teachers should receive the teacher password.</p></div><button class="cta submit" type="submit" data-t="createBtn">Create account ↗</button></form>
+<p class="message" id="message" role="status" aria-live="polite"></p><div class="note"><b data-t="noteTitle">Important</b><p data-t="noteText">This starter saves accounts in this browser only. It is suitable for a demo, not for real private student records or shared use across devices. See README.md for safer deployment options.</p></div></div></section>
+</main><footer><span>© <span id="year"></span> Xwakurk Basic School</span><span data-t="footer">Learning together, growing together.</span></footer>
+<script src="config.js"></script><script src="script.js"></script>
+</body></html>
